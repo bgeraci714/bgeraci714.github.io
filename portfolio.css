@@ -83,6 +83,19 @@ body
     padding-bottom:0%;
 }
 
+@media only screen and (max-device-width: 480px)
+{
+    .row
+    {
+            margin: 0 0 0 0;
+    }
+
+    body
+    {
+        background-image:none;
+    }
+}
+
 
 /* Navbar CSS created using http://work.smarchal.com/twbscolor/*/
 .navbar-default {
