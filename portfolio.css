@@ -1,0 +1,158 @@
+body
+{
+    background-color: #6e8abb;
+    background-image:url(http://res.cloudinary.com/seaofwhatremains/image/upload/v1467486461/mixed-bgimg7_ghbzlu.jpg);
+    background-repeat:no-repeat;
+    background-position:center;
+    font-family:Ubuntu;
+    color:#586E95;
+
+}
+
+.jumbotron
+{
+    padding: 0.5em 0.6em;
+    color: white;
+}
+
+.heading
+{
+    color:#586E95;
+}
+
+.thumbImg
+{
+    max-width: 250px;
+    max-height: 235px;
+}
+
+.vertical-center
+{
+        min-height: 100%;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+}
+
+.row
+{
+    margin: 0% 10% 0% 10%;
+    padding-bottom: 5%;
+    background-color:white;
+}
+.row.top
+{
+    padding-top:5%;
+}
+
+.row.end
+{
+    padding-bottom:5%;
+}
+
+.sexy_line
+{
+    margin: 25px 20%;
+    height: 1px;
+    width: 60%;
+    background-color: white !important;
+
+}
+.sexy_line.white
+{
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0)) !important;
+}
+
+.sexy_line.black
+{
+    background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)) !important;
+}
+
+.sexy_line.blue
+{
+    background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(88, 110, 149, 0.75), rgba(0, 0, 0, 0)) !important;
+}
+
+.glyphicon
+{
+    font-size:3em;
+}
+
+.project
+{
+    padding-bottom:0%;
+}
+
+
+/* Navbar CSS created using http://work.smarchal.com/twbscolor/*/
+.navbar-default {
+  background-color: #b4a4dc;
+  border:0px;
+  border-radius:0px;
+
+}
+.navbar-default .navbar-brand {
+  color: #586e95;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #f7f7f7;
+}
+.navbar-default .navbar-text {
+  color: #586e95;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #586e95;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #f7f7f7;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #f7f7f7;
+  background-color: #000000;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #f7f7f7;
+  background-color: #000000;
+}
+.navbar-default .navbar-toggle {
+  border-color: #000000;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #000000;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #586e95;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #586e95;
+}
+.navbar-default .navbar-link {
+  color: #586e95;
+}
+.navbar-default .navbar-link:hover {
+  color: #f7f7f7;
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #586e95;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #f7f7f7;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #f7f7f7;
+    background-color: #000000;
+  }
+}
