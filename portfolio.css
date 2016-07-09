@@ -156,9 +156,14 @@ body
   color: #f7f7f7;
 }
 
+<<<<<<< HEAD
 @media (max-width: 768px) {
 
     .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+=======
+@media (max-width: 760px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+>>>>>>> parent of 4827c6d... updated bootstrap .js link
     color: #586e95;
     }
     .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
