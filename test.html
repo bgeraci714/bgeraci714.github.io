@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" type="text/css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"/>
+
+        <script   src="https://code.jquery.com/jquery-2.2.4.min.js"
+                  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="                 crossorigin="anonymous"></script>
+
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+        <title> Testing From FCC</title>
+    </head>
+    <body>
+        <script>
+          $(document).ready(function() {
+            $("#getMessage").on("click", function(){
+                var imgLink = "https://s3.amazonaws.com/freecodecamp/grumpy-cat.jpg";
+                html = "";
+                html = "<img src= '" + imgLink + "'>";
+                $(".message").html(html);
+            });
+
+
+            if (navigator.geolocation) {
+                console.log("Geolocation is supported!");
+                navigator.geolocation.getCurrentPosition(function(position) {
+                    $("#data").html("latitude: " + position.coords.latitude + "<br>longitude: " + position.coords.longitude);
+                });
+                navigator.geolocation.getCurrentPosition(function(position) {
+                    console.log(position.coords.latitude, position.coords.longitude);
+                });
+            }
+
+          });
+        </script>
+
+
+        <div class="container-fluid">
+          <div class = "row text-center">
+            <h2>Cat Photo Finder</h2>
+          </div>
+          <div class = "row text-center">
+            <div class = "col-xs-12 well message">
+              The message will go here
+            </div>
+            <div class = "col-xs-12 well" id = "data">
+                Your current location.
+            </div>
+          </div>
+          <div class = "row text-center">
+            <div class = "col-xs-12">
+              <button id = "getMessage" class = "btn btn-primary">
+                Get Message
+              </button>
+            </div>
+          </div>
+        </div>
+    </body>
+</html>
