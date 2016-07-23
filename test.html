@@ -28,11 +28,12 @@
                     dataType: "json",
                     url: "https://andruxnet-random-famous-quotes.p.mashape.com/?cat=movies",
                     success: function(data) {
-                        console.log(data);
-                        $(".message").html(data);
+                        console.log("Successfully read in quote!");
                     }
                 });
-                console.log(jqXHR);
+                if (jqXHR) {
+                    $(".message").html(jqXHR.quote + "<br /> - " + jqXHR.author);
+                }
                 /*
                 $.getJSON("https://andruxnet-random-famous-quotes.p.mashape.com/" , function(json) {
                     console.log(json);
