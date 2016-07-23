@@ -16,11 +16,6 @@
 
           $(document).ready(function() {
             $("#getMessage").on("click", function(){
-                /*
-                var imgLink = "https://s3.amazonaws.com/freecodecamp/grumpy-cat.jpg";
-                html = "";
-                html = "<img src= '" + imgLink + "'>";
-                */
                 var jqXHR = $.ajax({
                     beforeSend: function(request) {
                         request.setRequestHeader("X-Mashape-Key", 'ggWzY9h8uAmshKW1P72XiRqxzc3Lp16mLG2jsnluqNcjL48CPM');
@@ -34,16 +29,6 @@
                 console.log(jqXHR.responseJSON);
                 console.log(jqXHR);
                 $(".message").html("<p>" + jqXHR.responseJSON + "</p>");
-
-                /*
-                $.getJSON("https://andruxnet-random-famous-quotes.p.mashape.com/" , function(json) {
-                    console.log(json);
-                    var quote = "Hey!";
-                    $(".message").html(quote);
-                });
-                */
-
-
             });
 
 
@@ -56,10 +41,6 @@
                     console.log(position.coords.latitude, position.coords.longitude);
                 });
             }
-            console.log(window.location.protocol);
-
-
-
           });
         </script>
 
