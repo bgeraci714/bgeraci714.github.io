@@ -21,12 +21,23 @@
                 html = "";
                 html = "<img src= '" + imgLink + "'>";
                 */
+                $.ajax({
+                    beforeSend: function(request) {
+                        request.setRequestHeader("X-Mashape-Key", 'ggWzY9h8uAmshKW1P72XiRqxzc3Lp16mLG2jsnluqNcjL48CPM');
+                    },
+                    dataType: "json",
+                    url: https://andruxnet-random-famous-quotes.p.mashape.com/,
+                    success: function(data) {
+                        $(".message").html(data);
+                    }
+                });
+                /*
                 $.getJSON("https://andruxnet-random-famous-quotes.p.mashape.com/" , function(json) {
                     console.log(json);
                     var quote = "Hey!";
                     $(".message").html(quote);
                 });
-
+                */
 
 
             });
