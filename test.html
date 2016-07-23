@@ -32,7 +32,8 @@
                     }
                 });
                 console.log(jqXHR.responseText);
-                $(".message").html("<p>" + jqXHR["quote"] + "</p>");
+                console.log(jqXHR);
+                $(".message").html("<p>" + jqXHR + "</p>");
 
                 /*
                 $.getJSON("https://andruxnet-random-famous-quotes.p.mashape.com/" , function(json) {
