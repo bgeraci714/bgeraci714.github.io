@@ -19,8 +19,12 @@
                 html = "";
                 html = "<img src= '" + imgLink + "'>";
                 */
-                var html = "Testing 1 2 3";
-                $(".message").html(html);
+                $.getJSON("http://api.icndb.com/jokes/random" , function(json) {
+                    console.log(json);
+                    var quote = "Hey!";
+                    $(".message").html(quote);
+                });
+
 
 
             });
@@ -36,12 +40,7 @@
                 });
             }
 
-            $.getJSON("http://quotesondesign.com/wp-json/posts" , function(json) {
-                console.log(json);
-                var quote = "";
-                quote += json[0].content + "<p>— " + json[0].title + "</p> <br />";
-                $(".message").html(quote);
-            });
+
 
           });
         </script>
