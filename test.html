@@ -21,7 +21,7 @@
                 html = "";
                 html = "<img src= '" + imgLink + "'>";
                 */
-                $.ajax({
+                var jqXHR = $.ajax({
                     beforeSend: function(request) {
                         request.setRequestHeader("X-Mashape-Key", 'ggWzY9h8uAmshKW1P72XiRqxzc3Lp16mLG2jsnluqNcjL48CPM');
                     },
@@ -32,6 +32,7 @@
                         $(".message").html(data);
                     }
                 });
+                console.log(jqXHR);
                 /*
                 $.getJSON("https://andruxnet-random-famous-quotes.p.mashape.com/" , function(json) {
                     console.log(json);
