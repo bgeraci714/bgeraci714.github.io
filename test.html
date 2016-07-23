@@ -15,16 +15,13 @@
 
 
           $(document).ready(function() {
-              var host = "bgeraci714.github.io";
-              if ((host == window.location.host) && (window.location.protocol != "http:"))
-                window.location.protocol = "http";
             $("#getMessage").on("click", function(){
                 /*
                 var imgLink = "https://s3.amazonaws.com/freecodecamp/grumpy-cat.jpg";
                 html = "";
                 html = "<img src= '" + imgLink + "'>";
                 */
-                $.getJSON("http://api.icndb.com/jokes/random" , function(json) {
+                $.getJSON("https://andruxnet-random-famous-quotes.p.mashape.com/" , function(json) {
                     console.log(json);
                     var quote = "Hey!";
                     $(".message").html(quote);
