@@ -12,11 +12,12 @@
     </head>
     <body>
         <script>
-            var host = "bgeraci714.github.io";
-            if ((host == window.location.host) && (window.location.protocol != "http:"))
-                window.location.protocol = "http";
-                
+
+
           $(document).ready(function() {
+              var host = "bgeraci714.github.io";
+              if ((host == window.location.host) && (window.location.protocol != "http:"))
+                window.location.protocol = "http";
             $("#getMessage").on("click", function(){
                 /*
                 var imgLink = "https://s3.amazonaws.com/freecodecamp/grumpy-cat.jpg";
