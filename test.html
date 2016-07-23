@@ -24,11 +24,14 @@
                     url: "https://andruxnet-random-famous-quotes.p.mashape.com/?cat=movies",
                     success: function(data) {
                         console.log("Successfully read in quote!");
+                    },
+                    complete: function(jqXHR, textStatus) {
+                        console.log(jqXHR.responseJSON, textStatus);
                     }
                 });
-                console.log(jqXHR.responseJSON);
-                console.log(jqXHR);
-                $(".message").html("<p>" + jqXHR.responseJSON + "</p>");
+                //console.log(jqXHR.responseJSON);
+                //console.log(jqXHR);
+                //$(".message").html("<p>" + jqXHR.responseJSON + "</p>");
             });
 
 
