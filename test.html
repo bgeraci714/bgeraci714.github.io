@@ -31,7 +31,7 @@
                         console.log("Successfully read in quote!");
                     }
                 });
-                console.log(jqXHR);
+                console.log(jqXHR.responseText);
                 $(".message").html("<p>" + jqXHR["quote"] + "</p>");
 
                 /*
