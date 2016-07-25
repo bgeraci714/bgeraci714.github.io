@@ -3,6 +3,7 @@
     .centered-body {
         background-color: #cdcdc1;
         margin:10% 35% 10% 35%;
+        font-family:Ubuntu;
     }
 
     .well {
@@ -21,6 +22,7 @@
     .centered-body {
         background-color: #cdcdc1;
         margin:10% 35% 10% 35%;
+        font-family:Ubuntu;
     }
 
     .well {
@@ -39,6 +41,7 @@
     .centered-body {
         background-color: #cdcdc1;
         margin:20% 10% 20% 10%;
+        font-family:Ubuntu;
     }
     .well {
         background-color: rgba(245, 245, 245, 0.4);
@@ -56,6 +59,7 @@
     .centered-body {
         background-color: #cdcdc1;
         margin:20% 10% 20% 10%;
+        font-family:Ubuntu;
     }
     .well {
         background-color: rgba(245, 245, 245, 0.4);
