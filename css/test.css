@@ -1,3 +1,9 @@
+@media screen and (max-width: 600px){
+    body {
+        margin:10% 10% 10% 10%;
+    }
+}
+
 body {
     background-color: #cdcdc1;
     margin:10% 35% 10% 35%;
