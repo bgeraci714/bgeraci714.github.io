@@ -33,7 +33,7 @@
                             curQuote = jqXHR.responseJSON.quote;
                             curAuthor = jqXHR.responseJSON.author;
                             console.log(jqXHR.responseJSON, textStatus);
-                            $(".message").addClass("animate fadeIn");
+                            $(".message").addClass("animated fadeIn");
                             $(".message").html(curQuote + "<br />" + curAuthor);
 
                         }
