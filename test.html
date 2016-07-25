@@ -5,6 +5,10 @@
 
         <link rel="stylesheet" href="/css/animate.css" type="text/css"  />
 
+        <link rel="stylesheet" href="/css/test.css" type="text/css" / />
+
+        <script src="/js/rand_quote.js"></script>
+
         <script   src="https://code.jquery.com/jquery-2.2.4.min.js"
                   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="                 crossorigin="anonymous"></script>
 
@@ -13,27 +17,20 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <style>
-            .well {
-                background-color: rgba(245, 245, 245, 0.4);
-            }
+
         </style>
 
         <title> Testing Page </title>
     </head>
-    <body style="margin:10% 35% 10% 35%; background-color:#CDCDC1">
+    <body>
         <div class="container-fluid">
           <div class = "row text-center">
             <h2 style="color:black">Randomly Generated Movie Quotes!</h2>
           </div>
           <div class = "row text-center">
-            <div class = "col-xs-12 well message" style="font-size:1em; color: black; border:solid white 3px">
+            <div class = "col-xs-12 well message central-text">
               Random Movie Quotes for Your Enjoyment
             </div>
-            <!--
-            <div class = "col-xs-12 well" id = "data">
-                Your current location.
-            </div>
-        -->
           </div>
           <div class = "row text-center">
             <div class = "col-xs-12">
@@ -43,50 +40,5 @@
             </div>
           </div>
         </div>
-        <script>
-            $(document).ready(function() {
-                $("#getMessage").on("click", function(){
-                    var curQuote = "";
-                    var curAuthor = "";
-                    var jqXHR = $.ajax({
-                        beforeSend: function(request) {
-                            request.setRequestHeader("X-Mashape-Key", 'ggWzY9h8uAmshKW1P72XiRqxzc3Lp16mLG2jsnluqNcjL48CPM');
-                        },
-                        dataType: "json",
-                        url: "https://andruxnet-random-famous-quotes.p.mashape.com/?cat=movies",
-                        success: function(data) {
-                            console.log("Successfully read in quote!");
-                        },
-                        complete: function(jqXHR, textStatus) {
-                            curQuote = jqXHR.responseJSON.quote;
-                            curAuthor = jqXHR.responseJSON.author;
-                            console.log(jqXHR.responseJSON, textStatus);
-
-                            var COLORS = ["#AB82FF","#7171C6","#CD8162","#6E8B3D", "#CDCDC1", "#DAA520"];
-                            var randIndex = Math.floor(Math.random() * COLORS.length);
-
-                            $("body").hide().show();
-                            $("body").css("background-color", COLORS[randIndex]);
-
-                            $(".message").hide().html("\"" + curQuote + "\" <br /><br /> -" + curAuthor).fadeIn();
-
-
-                        }
-                });
-            });
-
-            /*
-            if (navigator.geolocation) {
-                console.log("Geolocation is supported!");
-                navigator.geolocation.getCurrentPosition(function(position) {
-                    $("#data").html("latitude: " + position.coords.latitude + "<br>longitude: " + position.coords.longitude);
-                });
-                navigator.geolocation.getCurrentPosition(function(position) {
-                    console.log(position.coords.latitude, position.coords.longitude);
-                });
-            }
-            */
-          });
-        </script>
     </body>
 </html>

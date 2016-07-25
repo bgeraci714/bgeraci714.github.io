@@ -1,0 +1,14 @@
+body {
+    background-color: #cdcdc1;
+    margin:10% 35% 10% 35%;
+}
+
+.well {
+    background-color: rgba(245, 245, 245, 0.4);
+}
+
+.central-text {
+    font-size:1em;
+    color: black;
+    border:solid white 3px
+}
