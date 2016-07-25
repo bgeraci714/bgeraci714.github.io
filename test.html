@@ -33,10 +33,15 @@
                             curQuote = jqXHR.responseJSON.quote;
                             curAuthor = jqXHR.responseJSON.author;
                             console.log(jqXHR.responseJSON, textStatus);
-                            var p = $("body").css("background-color", "white");
-                            p.hide(1500).show(1500);
+
+                            var newColor = "";
+                            var curColor = $("body").css("background-color");
+                            curColor = (curColor === "white" ? "purple" : "white");
+
+                            var p = $("body").css("background-color";
+                            p.hide().show();
                             p.queue(function() {
-                                p.css("background-color", "red");
+                                p.css("background-color", curColor);
                             });
                             $(".message").hide().html(curQuote + "<br />" + curAuthor).fadeIn();
 
