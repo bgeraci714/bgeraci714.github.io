@@ -33,6 +33,11 @@
                             curQuote = jqXHR.responseJSON.quote;
                             curAuthor = jqXHR.responseJSON.author;
                             console.log(jqXHR.responseJSON, textStatus);
+                            var p = $("body").css("background-color", "white");
+                            p.hide(1500).show(1500);
+                            p.queue(function() {
+                                p.css("background-color", "red");
+                            });
                             $(".message").hide().html(curQuote + "<br />" + curAuthor).fadeIn();
 
 
