@@ -1,12 +1,12 @@
 @media screen and (max-width: 480px) {
     body {
-        margin:20% 10% 10% 20%;
+        margin:20% 10% 20% 10%;
     }
 }
 
 body {
     background-color: #cdcdc1;
-    margin:10% 35% 35% 10%;
+    margin:10% 35% 10% 35%;
 }
 
 .well {
