@@ -12,9 +12,37 @@
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
+        <style>
+            .well {
+                background-color: rgba(245, 245, 245, 0.4);
+            }
+        </style>
+
         <title> Testing Page </title>
     </head>
-    <body>
+    <body style="margin:10% 35% 10% 35%; background-color:#CDCDC1">
+        <div class="container-fluid">
+          <div class = "row text-center">
+            <h2 style="color:black">Randomly Generated Movie Quotes!</h2>
+          </div>
+          <div class = "row text-center">
+            <div class = "col-xs-12 well message" style="font-size:1em; color: black; border:solid white 3px">
+              Random Movie Quotes for Your Enjoyment
+            </div>
+            <!--
+            <div class = "col-xs-12 well" id = "data">
+                Your current location.
+            </div>
+        -->
+          </div>
+          <div class = "row text-center">
+            <div class = "col-xs-12">
+              <button id = "getMessage" class = "btn btn-default">
+                New Quote
+              </button>
+            </div>
+          </div>
+        </div>
         <script>
             $(document).ready(function() {
                 $("#getMessage").on("click", function(){
@@ -34,16 +62,13 @@
                             curAuthor = jqXHR.responseJSON.author;
                             console.log(jqXHR.responseJSON, textStatus);
 
-                            var newColor = "";
-                            var curColor = $("body").css("background-color");
-                            curColor = (curColor === "white" ? "purple" : "white");
+                            var COLORS = ["#AB82FF","#7171C6","#CD8162","#6E8B3D", "#CDCDC1", "#DAA520"];
+                            var randIndex = Math.floor(Math.random() * COLORS.length);
 
-                            var p = $("body").css("background-color";
-                            p.hide().show();
-                            p.queue(function() {
-                                p.css("background-color", curColor);
-                            });
-                            $(".message").hide().html(curQuote + "<br />" + curAuthor).fadeIn();
+                            $("body").hide().show();
+                            $("body").css("background-color", COLORS[randIndex]);
+
+                            $(".message").hide().html("\"" + curQuote + "\" <br /><br /> -" + curAuthor).fadeIn();
 
 
                         }
@@ -63,29 +88,5 @@
             */
           });
         </script>
-
-
-        <div class="container-fluid">
-          <div class = "row text-center">
-            <h2>Testing Site!</h2>
-          </div>
-          <div class = "row text-center">
-            <div class = "col-xs-12 well message" style="font-size:1em">
-              The quote will go here
-            </div>
-            <!--
-            <div class = "col-xs-12 well" id = "data">
-                Your current location.
-            </div>
-        -->
-          </div>
-          <div class = "row text-center">
-            <div class = "col-xs-12">
-              <button id = "getMessage" class = "btn btn-primary">
-                Get Quote
-              </button>
-            </div>
-          </div>
-        </div>
     </body>
 </html>
