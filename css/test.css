@@ -1,4 +1,10 @@
-@media (max-width: 768px) {
+@media screen and (max-device-width: 480px) {
+    body {
+        margin:10% 5% 10% 5%;
+    }
+}
+
+@media screen and (max-device-width: 320px) {
     body {
         margin:10% 5% 10% 5%;
     }
