@@ -17,10 +17,11 @@ $(document).ready(function() {
                 console.log(jqXHR.responseJSON, textStatus);
 
                 var COLORS = ["#AB82FF","#7171C6","#CD8162","#6E8B3D", "#CDCDC1", "#DAA520"];
-                var randIndex = Math.floor(Math.random() * COLORS.length);
+                var randColor = Math.floor(Math.random() * COLORS.length);
 
                 $("body").hide().show();
-                $("body").css("background-color", COLORS[randIndex]);
+                $("body").css("background-color", COLORS[randColorIndex]);
+                $(".message").css("color", COLORS[randColorIndex]);
 
                 $(".message").hide().html("\"" + curQuote + "\" <br /><br /> -" + curAuthor).fadeIn();
 
