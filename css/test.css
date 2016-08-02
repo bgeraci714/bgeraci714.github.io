@@ -13,7 +13,8 @@
     .central-text {
         font-size:1em;
         color: black;
-        border:solid white 3px
+        border:solid white 3px;
+        background-color: white;
     }
 }
 
