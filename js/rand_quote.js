@@ -21,7 +21,6 @@ $(document).ready(function() {
 
                 $("body").hide().show();
                 $("body").css("background-color", COLORS[randColorIndex]);
-                $(".message").css("color", COLORS[randColorIndex]);
 
                 $(".message").hide().html("\"" + curQuote + "\" <br /><br /> -" + curAuthor).fadeIn();
 
