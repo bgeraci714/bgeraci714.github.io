@@ -35,12 +35,4 @@ $(document).ready(function() {
             }
         });
     });
-    $("#twitter-button").on("click", function(){
-        var STARTING_TEXT = "Random Movie Quotes for Your Enjoyment";
-        if (".message".html() === STARTING_TEXT) {
-            $(".message").hide().html("You need to get a quote before you can tweet it!").fadeIn();
-        }
-        else
-            $("#twit-btn").prop("disabled", false);
-    });
 });
