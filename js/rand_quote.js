@@ -26,7 +26,7 @@ $(document).ready(function() {
 
                 $("#twitter-button").attr("href", function() {
                     var twitterQuote = curQuote.length < 120 ? curQuote.slice(0,curQuote.length) : curQuote.slice(0, 120) + ". . .";
-                    var formattedAuthor = curAuthor.split(" ").join("%20");
+                    var formattedAuthor = '"' + curAuthor.split(" ").join("%20") + '"';
                     var formattedQuote = twitterQuote.split(" ").join("%20");
 
                     return "http://twitter.com/share?text=" + formattedQuote + " - " + formattedAuthor;
@@ -34,5 +34,10 @@ $(document).ready(function() {
                 })
             }
         });
+    });
+    $("#twitter-button").on("click", function(){
+        var STARTING_TEXT = "Random Movie Quotes for Your Enjoyment";
+        if (".message".html() === STARTING_TEXT)
+            $(".message").hide().html("You need to get a quote before you can tweet it!").fadeIn();
     });
 });
