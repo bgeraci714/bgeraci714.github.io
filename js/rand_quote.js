@@ -29,7 +29,7 @@ $(document).ready(function() {
                     var formattedAuthor = curAuthor.split(" ").join("%20");
                     var formattedQuote = twitterQuote.split(" ").join("%20");
 
-                    return "http://twitter.com/share?text=" + formattedQuote + " - " + twitterAuthor;
+                    return "http://twitter.com/share?text=" + formattedQuote + " - " + formattedAuthor;
 
                 })
             }
