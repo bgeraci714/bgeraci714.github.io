@@ -20,7 +20,7 @@ $(document).ready(function() {
                 var randColor = Math.floor(Math.random() * COLORS.length);
 
                 $("body").hide().show();
-                $("body").css("background-color", COLORS[randColorIndex]);
+                $("body").css("background-color", COLORS[randColor]);
 
                 $(".message").hide().html("\"" + curQuote + "\" <br /><br /> -" + curAuthor).fadeIn();
 
