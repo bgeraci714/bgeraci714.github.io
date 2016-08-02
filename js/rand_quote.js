@@ -17,7 +17,7 @@ $(document).ready(function() {
                 console.log(jqXHR.responseJSON, textStatus);
 
                 var COLORS = ["#AB82FF","#7171C6","#CD8162","#6E8B3D", "#CDCDC1", "#DAA520"];
-                var randColor = Math.floor(Math.random() * COLORS.length);
+                var randColorIndex = Math.floor(Math.random() * COLORS.length);
 
                 $("body").hide().show();
                 $("body").css("background-color", COLORS[randColorIndex]);
