@@ -25,16 +25,14 @@ $(document).ready(function() {
                 $(".message").hide().html("\"" + curQuote + "\" <br /><br /> -" + curAuthor).fadeIn();
 
                 $("#twitter-button").attr("href", function() {
-                    var twitterQuote = curQuote.length < 120 ? curQuote.slice(0,curQuote.length) : curQuote.slice(0, 120);
+                    var twitterQuote = curQuote.length < 120 ? curQuote.slice(0,curQuote.length) : curQuote.slice(0, 120) + "...";
+                    var formattedAuthor = curAuthor.split(" ").join("%20");
                     var formattedQuote = twitterQuote.split(" ").join("%20");
 
-                    return "http://twitter.com/share?text=" + formattedQuote;
+                    return "http://twitter.com/share?text=" + formattedQuote + twitterAuthor;
 
                 })
             }
         });
-    });
-    $("#twitter-button").on("click", function(){
-
     });
 });
