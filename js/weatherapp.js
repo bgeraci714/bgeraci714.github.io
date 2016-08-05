@@ -4,8 +4,7 @@ $(document).ready(function() {
             $("#data").html("latitude: " + position.coords.latitude + "<br>longitude: " + position.coords.longitude);
         });
     }
-    else
-        $.getJSON("http://ipinfo.io", function(data) {
-            console.log(data)
-        });
+    $.getJSON("http://ipinfo.io", function(data) {
+        console.log(data)
+    });
 });
