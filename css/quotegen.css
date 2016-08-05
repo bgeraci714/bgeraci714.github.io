@@ -1,5 +1,5 @@
 /* Large desktop */
-@media (min-width: 1200px) {
+@media (min-width: 979px) {
     .centered-body {
         background-color: #cdcdc1;
         margin:10% 35% 10% 35%;
