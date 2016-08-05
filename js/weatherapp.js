@@ -4,7 +4,7 @@ $(document).ready(function() {
             $("#data").html("latitude: " + position.coords.latitude + "<br>longitude: " + position.coords.longitude);
         });
     }
-    $.getJSON("https://ipinfo.io", function(data) {
+    $.getJSON("https://freegeoip.net/json/", function(data) {
         console.log(data)
     });
 });
