@@ -10,7 +10,7 @@ $(document).ready(function() {
 
 function localWeatherData (locationData) {
     // API key is 176611c00d609a0919ef1cd4b31da46b
-    var weatherMapURL = "http://api.openweathermap.org/data/2.5/weather?APPID=176611c00d609a0919ef1cd4b31da46b&zip="
+    var weatherMapURL = "https://api.openweathermap.org/data/2.5/weather?APPID=176611c00d609a0919ef1cd4b31da46b&zip="
     $.getJSON(weatherMapURL + locationData.zip_code, function(weatherData) {
         var temp = weatherData.main.temp;
 
