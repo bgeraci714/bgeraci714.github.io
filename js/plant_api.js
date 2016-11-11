@@ -15,7 +15,7 @@ $(document).ready(function(){
 
     //console.log(plant);
     $.ajax({
-      url: "http://localhost:3000/api/plants/",
+      url: "https://rails-plant-api.herokuapp.com/api/plants/",
       method: "POST",
       data: plant,
       dataType: 'json',
@@ -41,7 +41,7 @@ function dataToPagePanel(data) {
 
 function generateDBPanel(){
   $.ajax({
-    url: "http://localhost:3000/api/plants/",
+    url: "https://rails-plant-api.herokuapp.com/api/plants/",
     method: "GET",
     success: function(data) {
       dataToPagePanel(data);
