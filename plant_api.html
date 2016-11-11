@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script
+      src="https://code.jquery.com/jquery-3.1.1.min.js"
+      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+      crossorigin="anonymous">
+    </script>
+
+    <link rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous">
+
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+      integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+      crossorigin="anonymous">
+    </script>
+
+
+    <title> Plant API </title>
+  </head>
+  <body>
+    <div class="jumbotron text-center">
+       <h1> Plants API </h1>
+    </div>
+    <div class="container">
+      <!-- Form for adding to the database -->
+      <div class="panel panel-success">
+        <div class="panel-heading">
+          Add a New Plant
+        </div>
+        <div class="panel-body">
+          <div class="form-group">
+            <input id="plantName" type="text" class="form-control" placeholder="Plant Name"> </br>
+            <input id="plantDesc" type="text" class="form-control" placeholder="Description">
+          </div>
+          <button id="newPlantButton" type="submit" class="btn btn-success">Submit</button>
+        </div>
+      </div>
+
+      <!-- Panel with information about the plants -->
+      <div class="panel panel-success">
+        <div class="panel-heading"> Plant Database</div>
+        <div class="demo panel-body"></div>
+      </div>
+    </div>
+    <script src="js/plant_api.js"></script>
+  </body>
+</html>
